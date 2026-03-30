@@ -24,7 +24,7 @@ async def write_to_serial(queue):
 
 
 async def connect_to_websocket(queue):
-    uri = "ws://103.174.103.99:8080"  # Replace with your WebSocket server URL
+    uri = "ws://103.174.103.99:8080" 
     try:
         async with websockets.connect(uri, ping_interval=20) as websocket:
             await websocket.send("Ubuntu5")
